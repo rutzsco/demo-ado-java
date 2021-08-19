@@ -1,0 +1,19 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  adoProjectName: 'demo-project-name6'
+  adoOrganizationUri: 'https://dev.azure.com/scrutz'
+  resourceGroupName: 'demo-project-rg'
+steps:
+- task: JavaToolInstaller@0
+    inputs:
+      versionSpec: "16"
+      jdkArchitectureOption: x64
+      jdkSourceOption: LocalDirectory
+      jdkFile: "/packages/microsoft-jdk-16.0.2.7.1-linux-x64.tar.gz"
+      jdkDestinationDirectory: "/builds/binaries/externals"
+      cleanDestinationDirectory: true
