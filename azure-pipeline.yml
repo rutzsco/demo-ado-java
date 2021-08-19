@@ -11,13 +11,13 @@ variables:
 steps:
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '8'
+    versionSpec: '16'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'AzureStorage'
     azureResourceManagerEndpoint: 'Demo Account'
     azureStorageAccountName: 'corecicdsa'
     azureContainerName: 'java'
     azureCommonVirtualFile: '/microsoft-jdk-16.0.2.7.1-linux-x64.tar.gz'
-    jdkDestinationDirectory: '/tools'
+    jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk16'
     cleanDestinationDirectory: true
 
