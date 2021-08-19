@@ -17,7 +17,7 @@ steps:
     azureResourceManagerEndpoint: 'Demo Account'
     azureStorageAccountName: 'corecicdsa'
     azureContainerName: 'java'
-    azureCommonVirtualFile: '/microsoft-jdk-16.0.2.7.1-linux-x64.tar.gz'
+    azureCommonVirtualFile: 'microsoft-jdk-16.0.2.7.1-linux-x64.tar.gz'
     jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk16'
     cleanDestinationDirectory: true
 
